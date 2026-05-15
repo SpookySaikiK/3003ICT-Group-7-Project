@@ -47,7 +47,7 @@
 ---
 
 ### Documentation:
-#### Report:
+#### Report: https://griffitheduau-my.sharepoint.com/:w:/g/personal/lucas_el-harrif_griffithuni_edu_au/IQDVVJtpURJiRpMF5s2ZeiS0AXIsal1iPE3fpncOkijqhhI?e=niQuGD
 1. Project Overview
 2. Technical Requirements Compliance
 3. System Architecture
