@@ -7,9 +7,6 @@
 - Camera
 - Microphone
 
----
-
-
 ### Processing(Thinking):
 #### FSM:
 1. Idle / Paused
@@ -28,8 +25,6 @@
 2. Stuck Detection
 
 3. ADVANCED COMPONENT: Grid Mapping System
-
----
 
 ### Actuation(Output):
 - LED Indicator (Cleaning, Paused, Error)
