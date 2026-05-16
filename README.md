@@ -12,17 +12,17 @@
 1. Idle / Paused
 2. Cleaning
 3. Obstacle Avoidance
-4. Dead End Recovery (Same as Obstacle Avoidance?)
+4. Dead End RecoverY
 5. Charging / Return to Dock
 
 #### Perception Module(External Module)(Triggers FSM States):
 1. Obstacle Detection
-2. Task Completion Detection
 3. Cliff/Drop Detection
 
 #### Multi-Condition Decision Logic Module(Internal Module)(Triggers FSM States):
 1. Low Battery Level Detection
 2. Stuck Detection
+3. Task Completion Detection
 
 3. ADVANCED COMPONENT: Grid Mapping System
 
@@ -35,8 +35,7 @@
 ---
 
 ### Webot Environment:
-- Living Room?
-- Classroom?
+- USE SAMPLE APARTMENT WEBOTS
 
 
 ---
