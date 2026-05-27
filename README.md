@@ -1,60 +1,66 @@
-# 3003ICT-Group-7-Project
+# Voom-Bot: Autonomous Indoor Cleaning Robot
 
-## Webot Controller Code:
+## Overview
+Voom-Bot is an autonomous indoor cleaning robot built in Webots using the Pioneer 3-DX platform. It is designed to navigate indoor environments, avoid obstacles, and clean areas without human control.
 
-### Sensing(Inputs):
-- Distance
-- Camera
-- Microphone
-
-### Processing(Thinking):
-#### FSM:
-1. Idle / Paused
-2. Cleaning
-3. Obstacle Avoidance
-4. Dead End RecoverY
-5. Charging / Return to Dock
-
-#### Perception Module(External Module)(Triggers FSM States):
-1. Obstacle Detection
-3. Cliff/Drop Detection
-
-#### Multi-Condition Decision Logic Module(Internal Module)(Triggers FSM States):
-1. Low Battery Level Detection
-2. Stuck Detection
-3. Task Completion Detection
-
-3. ADVANCED COMPONENT: Grid Mapping System
-
-### Actuation(Output):
-- LED Indicator (Cleaning, Paused, Error)
-- Drive Motors
-- Speaker~
-- Vacuum Attachment~
+The robot uses a finite state machine (FSM) to manage behaviour and switches between exploration, cleaning, avoidance, and safety states depending on sensor input and system conditions.
 
 ---
 
-### Webot Environment:
-- USE SAMPLE APARTMENT WEBOTS
-
+## Features
+- Autonomous indoor navigation and exploration  
+- Obstacle avoidance using proximity sensors  
+- Cliff detection for safety  
+- Grid-based coverage of the environment  
+- Automatic return to charging dock  
+- Battery monitoring and charging behaviour  
+- Stuck detection and recovery mode  
+- LED and speaker feedback for system status  
 
 ---
 
-### Documentation:
-Link: https://griffitheduau-my.sharepoint.com/:w:/g/personal/lucas_el-harrif_griffithuni_edu_au/IQDVVJtpURJiRpMF5s2ZeiS0AXIsal1iPE3fpncOkijqhhI?e=niQuGD
-#### Report:
-1. Project Overview
-2. Technical Requirements Compliance
-3. System Architecture
-4. Behaviour Model
-5. Perception / Sensor Processing
-6. Safety and Robustness
-7. Code Structure
-8. Key Code Snippets
-9. Results / Demonstration Summary
-10. Individual Contributions
+## Inputs (Sensors)
+- 8 × Proximity sensors  
+- Cliff sensors  
+- GPS  
+- Compass  
+- Keyboard input (manual override)  
 
-#### Testing
+---
 
-#### Video Demonstration
+## Outputs (Actuators)
+- Differential drive motors  
+- LED indicators  
+- Speaker output  
 
+---
+
+## Behaviour System
+The robot is controlled using a Finite State Machine (FSM) with the following states:
+
+- PAUSED  
+- EXPLORE  
+- CLEANING  
+- AVOID  
+- CLIFF  
+- RECOVERY  
+- CHARGING  
+
+The system continuously switches between states based on sensor readings, battery level, and environment conditions.
+
+---
+
+## How It Works
+1. The robot explores the environment autonomously  
+2. It detects obstacles and avoids collisions  
+3. It builds a simple grid-based map of visited areas  
+4. It switches to cleaning mode when appropriate  
+5. It returns to the dock when battery is low  
+6. Safety systems handle cliffs and stuck situations  
+
+---
+
+## Team
+- Lucas El-Harrif  
+- Michelle Murutsi  
+- Tashinga Blessed Nyamadzawo  
